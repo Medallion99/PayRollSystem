@@ -40,8 +40,8 @@ namespace MainPayRoll.Model
 
         public Employee(double regularRate, double overtimeRate)
         {
-            regularRate = regularRate;
-            overtimeRate = overtimeRate;
+            this.regularRate = regularRate;
+            this.overtimeRate = overtimeRate;
         }
 
         public void CalculatePayroll()
