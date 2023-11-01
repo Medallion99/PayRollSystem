@@ -3,7 +3,8 @@ using MainPayRoll.Model;
 
 PayrollManager payrollManager = new PayrollManager();
 
-while (true)
+bool option = true;
+while (option)
 {
     Console.WriteLine("Enter employee details (or type 'exit' to finish):");
 
@@ -49,6 +50,11 @@ while (true)
     };
 
     payrollManager.AddEmployee(newEmployee);
+    Console.WriteLine("Would you like to add another Employee (Y / N)");
+    string ans = Console.ReadLine().ToUpper();
+    if (ans == "Y")
+        option = true; else option = false;
+
 }
 
 payrollManager.PrintEmployeeInfo();
