@@ -18,13 +18,11 @@ namespace Payroll.Test
             employee.CalculatePayroll();
 
             // Assert
-            // You can use xUnit assertions to check the expected values.
             Assert.Equal(475.0, employee.GrossPay); // Expected Gross Pay
             Assert.Equal(9.5, employee.MedicareDeduction); // Expected Medicare Deduction
             Assert.Equal(23.75, employee.RentDeduction); // Expected Rent Deduction
             Assert.Equal(14.25, employee.FoodDeduction); // Expected Food Deduction
             Assert.Equal(427.5, employee.NetPay); // Expected Net Pay
-
         }
     }
 }
